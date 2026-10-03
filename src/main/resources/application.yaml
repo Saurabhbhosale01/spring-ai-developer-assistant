@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: health-assistent
+
+  ai:
+    google:
+      genai:
+        api-key: ${GEMINI_API_KEY}
+        chat:
+          model: gemini-3.8-flash
+
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/developer_ai
+    username: postgres
+    password: root
+    driver-class-name: org.postgresql.Driver
+
+
+server:
+  port: 8080
+
